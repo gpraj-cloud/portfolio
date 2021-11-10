@@ -1,0 +1,338 @@
+@font-face {
+  font-family: Cookie;
+  src: url("../fonts/Cookie-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Merienda;
+  src: url("../fonts/Merienda-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Playball;
+  src: url("../fonts/Playball-Regular.ttf") format("truetype");
+}
+
+//color-codes
+$colorDark : #000;
+
+$primaryPink : #e10051;
+//rgb(225, 0, 81)
+$secondaryPink : #fc2374;
+// $dark : #e40770;
+// $light : #f44787;
+
+//spaces
+$sizeZero : 0;
+$sizeOne : 0.5em;
+$sizeTwo : 1em;
+$sizeThree : 1.5em;
+$sizeFour : 2em;
+$sizeFive : 2.5em;
+
+//Default-classes
+
+//background-color
+.bgPrimary{ background-color: $colorDark}
+.bgSecondary{ background-color: $colorDark}
+.bgSuccess{ background-color: $colorDark}
+.bgDanger{ background-color: $colorDark}
+.bgDark{ background-color: $colorDark}
+.bgLight{ background-color: $colorDark}
+
+//text-color
+.textPrimary{ color: $colorDark}
+.textSecondary{ color: $colorDark}
+.textSuccess{ color: $colorDark}
+.textDanger{ color: $colorDark}
+.textDark{ color: $colorDark}
+.textLight{ color: $colorDark}
+
+//positions
+.absolute{ position: absolute}
+.relative{ position: relative}
+.sticky{ position: sticky}
+.fixed{position: fixed}
+
+//width-space
+.w-25{ width: 25%}
+.w-50{ width: 50%}
+.w-75{ width: 70%}
+.w-100{ width: 100%}
+
+//margin
+.m-0{ margin: $sizeZero}
+.m-1{ margin: $sizeOne}
+.m-2{ margin: $sizeTwo}
+.m-3{ margin: $sizeThree}
+.m-4{ margin: $sizeFour}
+.m-5{ margin: $sizeFive}
+
+//margin-right
+.mr-0{ margin-right: $sizeZero}
+.mr-1{ margin-right: $sizeOne}
+.mr-2{ margin-right: $sizeTwo}
+.mr-3{ margin-right: $sizeThree}
+.mr-4{ margin-right: $sizeFour}
+.mr-5{ margin-right: $sizeFive}
+
+//margin-left
+.ml-0{ margin-left: $sizeZero}
+.ml-1{ margin-left: $sizeOne}
+.ml-2{ margin-left: $sizeTwo}
+.ml-3{ margin-left: $sizeThree}
+.ml-4{ margin-left: $sizeFour}
+.ml-5{ margin-left: $sizeFive}
+
+//margin-bottom
+.mb-0{ margin-bottom: $sizeZero}
+.mb-1{ margin-bottom: $sizeOne}
+.mb-2{ margin-bottom: $sizeTwo}
+.mb-3{ margin-bottom: $sizeThree}
+.mb-4{ margin-bottom: $sizeFour}
+.mb-5{ margin-bottom: $sizeFive}
+
+//margin-top
+.mt-0{ margin-top: $sizeZero}
+.mt-1{ margin-top: $sizeOne}
+.mt-2{ margin-top: $sizeTwo}
+.mt-3{ margin-top: $sizeThree}
+.mt-4{ margin-top: $sizeFour}
+.mt-5{ margin-top: $sizeFive}
+
+//padding
+.p-0{ padding: $sizeZero}
+.p-1{ padding: $sizeOne}
+.p-2{ padding: $sizeTwo}
+.p-3{ padding: $sizeThree}
+.p-4{ padding: $sizeFour}
+.p-5{ padding: $sizeFive}
+
+//padding-right
+.pr-0{ padding-right: $sizeZero}
+.pr-1{ padding-right: $sizeOne}
+.pr-2{ padding-right: $sizeTwo}
+.pr-3{ padding-right: $sizeThree}
+.pr-4{ padding-right: $sizeFour}
+.pr-5{ padding-right: $sizeFive}
+
+//padding-left
+.pl-0{ padding-left: $sizeZero}
+.pl-1{ padding-left: $sizeOne}
+.pl-2{ padding-left: $sizeTwo}
+.pl-3{ padding-left: $sizeThree}
+.pl-4{ padding-left: $sizeFour}
+.pl-5{ padding-left: $sizeFive}
+
+//padding-bottom
+.pb-0{ padding-bottom: $sizeZero}
+.pb-1{ padding-bottom: $sizeOne}
+.pb-2{ padding-bottom: $sizeTwo}
+.pb-3{ padding-bottom: $sizeThree}
+.pb-4{ padding-bottom: $sizeFour}
+.pb-5{ padding-bottom: $sizeFive}
+
+//padding-top
+.pt-0{ padding-top: $sizeZero}
+.pt-1{ padding-top: $sizeOne}
+.pt-2{ padding-top: $sizeTwo}
+.pt-3{ padding-top: $sizeThree}
+.pt-4{ padding-top: $sizeFour}
+.pt-5{ padding-top: $sizeFive}
+
+//padding-left&right
+.plr-0{ padding-left: $sizeZero; padding-right: $sizeZero;}
+.plr-1{ padding-left: $sizeOne; padding-right: $sizeOne;}
+.plr-2{ padding-left: $sizeTwo; padding-right: $sizeTwo;}
+.plr-3{ padding-left: $sizeThree; padding-right: $sizeThree;}
+.plr-4{ padding-left: $sizeFour; padding-right: $sizeFour;}
+.plr-5{ padding-left: $sizeFive; padding-right: $sizeFive;}
+
+//padding-top&bottom
+.ptb-0{ padding-top: $sizeZero; padding-bottom: $sizeZero;}
+.ptb-1{ padding-top: $sizeOne; padding-bottom: $sizeOne;}
+.ptb-2{ padding-top: $sizeTwo; padding-bottom: $sizeTwo;}
+.ptb-3{ padding-top: $sizeThree; padding-bottom: $sizeThree;}
+.ptb-4{ padding-top: $sizeFour; padding-bottom: $sizeFour;}
+.ptb-5{ padding-top: $sizeFive; padding-bottom: $sizeFive;}
+
+//---------------------------
+
+*{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body{
+  background-color : #f7f7f7;
+  transition: all;
+}
+
+ul{
+  display: inline-flex;
+}
+
+//nav-bar
+
+.header{
+  font-family: Merienda;
+  top: 0;
+  background-color:#ffe8ff;
+
+  .header-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    .navLink{
+      color: $primaryPink;
+      padding-top:2px;
+      padding-bottom: 4px;
+      cursor: pointer;
+
+      &:hover{
+        background-color: $primaryPink;
+        color: #fff;
+        outline: 1px solid rgba(225,0,81,0.5);
+        outline-offset: 3px;
+      }
+    }
+
+    &__navItems > span{
+      background-color: rgba(225,0,81,0.5);
+      width: 30px;
+      height: 12px;
+      margin-top: 6px;
+      visibility: hidden;
+    }
+
+    .active{
+      background-color: $primaryPink;
+      color: #fff;
+      outline: 1px solid rgba(225,0,81,0.5);
+      outline-offset: 3px;
+    }
+  }
+}
+
+.homeContent{
+  text-align: center;
+  color: $primaryPink;
+
+  h1{
+    margin-top: 1em;
+    font-family: Cookie;
+    font-size: 6em;
+  }
+
+  p:nth-child(2){
+    font-family: Playball;
+    font-size: 2em;
+    margin-top: -20px;
+  }
+
+  p:nth-child(3){
+    font-size: 2.7em;
+    margin-top: 10px;
+    font-family: Cookie;
+    padding: 0px 7em;
+  }
+
+  &-buttons{
+    margin-top:1.5em;
+
+    button{
+      border: 0;
+      padding: 5px 20px;
+      font-size: 25px;
+      margin: -2px;
+      cursor: pointer;
+      color: #fff;
+    }
+
+    &__btnWeb{
+      background-color: rgb(225, 0, 81);
+    }
+
+    &__btnGraph{
+      background-color: rgba(225, 0, 81,0.5);
+    }
+  }
+
+  &-bgImg{
+    background-image: url("../img/grass-pink.png");
+    height: 6em;
+    background-repeat: repeat-x;
+    margin-top: 8em;
+  }
+
+}
+
+
+.intro-loader{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  z-index: 5;
+
+  svg text{ 
+    font-size: 150px;
+    stroke: #0007;
+    stroke-width: 3;
+    animation: nameAnimate 8s infinite alternate;
+  }
+}
+
+.covid{
+  position: absolute;
+  z-index: 10;
+  background-color: rgb(240, 240, 240) !important;
+}
+
+/* Keyframes */
+
+@keyframes nameAnimate{
+  0%{
+      stroke-dasharray: 0 50%;
+      stroke-dashoffset: 20%;
+      fill: #fff;
+  }
+  50%{
+      stroke-dasharray: 50% 0;
+      stroke-dashoffset: 20%;
+      fill: #fff5;
+  }
+  100%{
+      stroke-dasharray:  100% 100%;
+      stroke-dashoffset: 100%;
+      fill:#0007;
+  }
+}
+
+/* Responsive */
+
+@media (max-width: 480px) {
+  .intro-loader svg text{
+    font-size: 70px;
+    stroke-width: 2;
+  }
+}
+
+@media (max-width: 768px) {
+  .intro-loader svg text{
+    font-size: 100px;
+    stroke-width:2;
+  }
+}
+
+@media (max-width: 1024px) { 
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (min-width: 1201px) {
+}
