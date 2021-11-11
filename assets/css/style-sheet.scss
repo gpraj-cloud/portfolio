@@ -12,236 +12,601 @@
 }
 
 //color-codes
-$colorDark : #000;
+$colorDark: #000;
 
-$primaryPink : #e10051;
+$primaryPink: #e10051;
 //rgb(225, 0, 81)
-$secondaryPink : #fc2374;
+$secondaryPink: #fc2374;
 // $dark : #e40770;
 // $light : #f44787;
 
 //spaces
-$sizeZero : 0;
-$sizeOne : 0.5em;
-$sizeTwo : 1em;
-$sizeThree : 1.5em;
-$sizeFour : 2em;
-$sizeFive : 2.5em;
+$sizeZero: 0;
+$sizeOne: 0.5em;
+$sizeTwo: 1em;
+$sizeThree: 1.5em;
+$sizeFour: 2em;
+$sizeFive: 2.5em;
 
 //Default-classes
 
 //background-color
-.bgPrimary{ background-color: $colorDark}
-.bgSecondary{ background-color: $colorDark}
-.bgSuccess{ background-color: $colorDark}
-.bgDanger{ background-color: $colorDark}
-.bgDark{ background-color: $colorDark}
-.bgLight{ background-color: $colorDark}
+.bgPrimary {
+  background-color: $colorDark;
+}
+.bgSecondary {
+  background-color: $colorDark;
+}
+.bgSuccess {
+  background-color: $colorDark;
+}
+.bgDanger {
+  background-color: $colorDark;
+}
+.bgDark {
+  background-color: $colorDark;
+}
+.bgLight {
+  background-color: $colorDark;
+}
 
 //text-color
-.textPrimary{ color: $colorDark}
-.textSecondary{ color: $colorDark}
-.textSuccess{ color: $colorDark}
-.textDanger{ color: $colorDark}
-.textDark{ color: $colorDark}
-.textLight{ color: $colorDark}
+.textPrimary {
+  color: $colorDark;
+}
+.textSecondary {
+  color: $colorDark;
+}
+.textSuccess {
+  color: $colorDark;
+}
+.textDanger {
+  color: $colorDark;
+}
+.textDark {
+  color: $colorDark;
+}
+.textLight {
+  color: $colorDark;
+}
+
+//text-position
+
+.textCenter {
+  text-align: center;
+}
+.textRight {
+  text-align: right;
+}
+.textLeft {
+  text-align: left;
+}
+.textJustify {
+  text-align: justify;
+}
 
 //positions
-.absolute{ position: absolute}
-.relative{ position: relative}
-.sticky{ position: sticky}
-.fixed{position: fixed}
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.sticky {
+  position: sticky;
+}
+.fixed {
+  position: fixed;
+}
 
 //width-space
-.w-25{ width: 25%}
-.w-50{ width: 50%}
-.w-75{ width: 70%}
-.w-100{ width: 100%}
+.w-25 {
+  width: 25%;
+}
+.w-50 {
+  width: 50%;
+}
+.w-75 {
+  width: 70%;
+}
+.w-100 {
+  width: 100%;
+}
+
+//containers
+
+.container {
+  margin: 15px 10px;
+}
+
+.row {
+  display: flex;
+  padding: 10px;
+}
+
+.column {
+  min-width: 8.333334%;
+  max-width: 100%;
+  width: auto;
+}
+
+.alignCenter {
+  align-items: center;
+}
+.justifyCenter {
+  justify-content: center;
+}
+
+.radiusLess {
+  border-radius: 0;
+}
+
+.shadowLess {
+  box-shadow: none;
+}
 
 //margin
-.m-0{ margin: $sizeZero}
-.m-1{ margin: $sizeOne}
-.m-2{ margin: $sizeTwo}
-.m-3{ margin: $sizeThree}
-.m-4{ margin: $sizeFour}
-.m-5{ margin: $sizeFive}
+.m-0 {
+  margin: $sizeZero;
+}
+.m-1 {
+  margin: $sizeOne;
+}
+.m-2 {
+  margin: $sizeTwo;
+}
+.m-3 {
+  margin: $sizeThree;
+}
+.m-4 {
+  margin: $sizeFour;
+}
+.m-5 {
+  margin: $sizeFive;
+}
 
 //margin-right
-.mr-0{ margin-right: $sizeZero}
-.mr-1{ margin-right: $sizeOne}
-.mr-2{ margin-right: $sizeTwo}
-.mr-3{ margin-right: $sizeThree}
-.mr-4{ margin-right: $sizeFour}
-.mr-5{ margin-right: $sizeFive}
+.mr-0 {
+  margin-right: $sizeZero;
+}
+.mr-1 {
+  margin-right: $sizeOne;
+}
+.mr-2 {
+  margin-right: $sizeTwo;
+}
+.mr-3 {
+  margin-right: $sizeThree;
+}
+.mr-4 {
+  margin-right: $sizeFour;
+}
+.mr-5 {
+  margin-right: $sizeFive;
+}
 
 //margin-left
-.ml-0{ margin-left: $sizeZero}
-.ml-1{ margin-left: $sizeOne}
-.ml-2{ margin-left: $sizeTwo}
-.ml-3{ margin-left: $sizeThree}
-.ml-4{ margin-left: $sizeFour}
-.ml-5{ margin-left: $sizeFive}
+.ml-0 {
+  margin-left: $sizeZero;
+}
+.ml-1 {
+  margin-left: $sizeOne;
+}
+.ml-2 {
+  margin-left: $sizeTwo;
+}
+.ml-3 {
+  margin-left: $sizeThree;
+}
+.ml-4 {
+  margin-left: $sizeFour;
+}
+.ml-5 {
+  margin-left: $sizeFive;
+}
 
 //margin-bottom
-.mb-0{ margin-bottom: $sizeZero}
-.mb-1{ margin-bottom: $sizeOne}
-.mb-2{ margin-bottom: $sizeTwo}
-.mb-3{ margin-bottom: $sizeThree}
-.mb-4{ margin-bottom: $sizeFour}
-.mb-5{ margin-bottom: $sizeFive}
+.mb-0 {
+  margin-bottom: $sizeZero;
+}
+.mb-1 {
+  margin-bottom: $sizeOne;
+}
+.mb-2 {
+  margin-bottom: $sizeTwo;
+}
+.mb-3 {
+  margin-bottom: $sizeThree;
+}
+.mb-4 {
+  margin-bottom: $sizeFour;
+}
+.mb-5 {
+  margin-bottom: $sizeFive;
+}
 
 //margin-top
-.mt-0{ margin-top: $sizeZero}
-.mt-1{ margin-top: $sizeOne}
-.mt-2{ margin-top: $sizeTwo}
-.mt-3{ margin-top: $sizeThree}
-.mt-4{ margin-top: $sizeFour}
-.mt-5{ margin-top: $sizeFive}
+.mt-0 {
+  margin-top: $sizeZero;
+}
+.mt-1 {
+  margin-top: $sizeOne;
+}
+.mt-2 {
+  margin-top: $sizeTwo;
+}
+.mt-3 {
+  margin-top: $sizeThree;
+}
+.mt-4 {
+  margin-top: $sizeFour;
+}
+.mt-5 {
+  margin-top: $sizeFive;
+}
+
+//margin-left&right
+.mlr-0 {
+  margin-left: $sizeZero;
+  margin-right: $sizeZero;
+}
+.mlr-1 {
+  margin-left: $sizeOne;
+  margin-right: $sizeOne;
+}
+.mlr-2 {
+  margin-left: $sizeTwo;
+  margin-right: $sizeTwo;
+}
+.mlr-3 {
+  margin-left: $sizeThree;
+  margin-right: $sizeThree;
+}
+.mlr-4 {
+  margin-left: $sizeFour;
+  margin-right: $sizeFour;
+}
+.mlr-5 {
+  margin-left: $sizeFive;
+  margin-right: $sizeFive;
+}
+
+//margin-top&bottom
+.mtb-0 {
+  margin-top: $sizeZero;
+  margin-bottom: $sizeZero;
+}
+.mtb-1 {
+  margin-top: $sizeOne;
+  margin-bottom: $sizeOne;
+}
+.mtb-2 {
+  margin-top: $sizeTwo;
+  margin-bottom: $sizeTwo;
+}
+.mtb-3 {
+  margin-top: $sizeThree;
+  margin-bottom: $sizeThree;
+}
+.mtb-4 {
+  margin-top: $sizeFour;
+  margin-bottom: $sizeFour;
+}
+.mtb-5 {
+  margin-top: $sizeFive;
+  margin-bottom: $sizeFive;
+}
 
 //padding
-.p-0{ padding: $sizeZero}
-.p-1{ padding: $sizeOne}
-.p-2{ padding: $sizeTwo}
-.p-3{ padding: $sizeThree}
-.p-4{ padding: $sizeFour}
-.p-5{ padding: $sizeFive}
+.p-0 {
+  padding: $sizeZero;
+}
+.p-1 {
+  padding: $sizeOne;
+}
+.p-2 {
+  padding: $sizeTwo;
+}
+.p-3 {
+  padding: $sizeThree;
+}
+.p-4 {
+  padding: $sizeFour;
+}
+.p-5 {
+  padding: $sizeFive;
+}
 
 //padding-right
-.pr-0{ padding-right: $sizeZero}
-.pr-1{ padding-right: $sizeOne}
-.pr-2{ padding-right: $sizeTwo}
-.pr-3{ padding-right: $sizeThree}
-.pr-4{ padding-right: $sizeFour}
-.pr-5{ padding-right: $sizeFive}
+.pr-0 {
+  padding-right: $sizeZero;
+}
+.pr-1 {
+  padding-right: $sizeOne;
+}
+.pr-2 {
+  padding-right: $sizeTwo;
+}
+.pr-3 {
+  padding-right: $sizeThree;
+}
+.pr-4 {
+  padding-right: $sizeFour;
+}
+.pr-5 {
+  padding-right: $sizeFive;
+}
 
 //padding-left
-.pl-0{ padding-left: $sizeZero}
-.pl-1{ padding-left: $sizeOne}
-.pl-2{ padding-left: $sizeTwo}
-.pl-3{ padding-left: $sizeThree}
-.pl-4{ padding-left: $sizeFour}
-.pl-5{ padding-left: $sizeFive}
+.pl-0 {
+  padding-left: $sizeZero;
+}
+.pl-1 {
+  padding-left: $sizeOne;
+}
+.pl-2 {
+  padding-left: $sizeTwo;
+}
+.pl-3 {
+  padding-left: $sizeThree;
+}
+.pl-4 {
+  padding-left: $sizeFour;
+}
+.pl-5 {
+  padding-left: $sizeFive;
+}
 
 //padding-bottom
-.pb-0{ padding-bottom: $sizeZero}
-.pb-1{ padding-bottom: $sizeOne}
-.pb-2{ padding-bottom: $sizeTwo}
-.pb-3{ padding-bottom: $sizeThree}
-.pb-4{ padding-bottom: $sizeFour}
-.pb-5{ padding-bottom: $sizeFive}
+.pb-0 {
+  padding-bottom: $sizeZero;
+}
+.pb-1 {
+  padding-bottom: $sizeOne;
+}
+.pb-2 {
+  padding-bottom: $sizeTwo;
+}
+.pb-3 {
+  padding-bottom: $sizeThree;
+}
+.pb-4 {
+  padding-bottom: $sizeFour;
+}
+.pb-5 {
+  padding-bottom: $sizeFive;
+}
 
 //padding-top
-.pt-0{ padding-top: $sizeZero}
-.pt-1{ padding-top: $sizeOne}
-.pt-2{ padding-top: $sizeTwo}
-.pt-3{ padding-top: $sizeThree}
-.pt-4{ padding-top: $sizeFour}
-.pt-5{ padding-top: $sizeFive}
+.pt-0 {
+  padding-top: $sizeZero;
+}
+.pt-1 {
+  padding-top: $sizeOne;
+}
+.pt-2 {
+  padding-top: $sizeTwo;
+}
+.pt-3 {
+  padding-top: $sizeThree;
+}
+.pt-4 {
+  padding-top: $sizeFour;
+}
+.pt-5 {
+  padding-top: $sizeFive;
+}
 
 //padding-left&right
-.plr-0{ padding-left: $sizeZero; padding-right: $sizeZero;}
-.plr-1{ padding-left: $sizeOne; padding-right: $sizeOne;}
-.plr-2{ padding-left: $sizeTwo; padding-right: $sizeTwo;}
-.plr-3{ padding-left: $sizeThree; padding-right: $sizeThree;}
-.plr-4{ padding-left: $sizeFour; padding-right: $sizeFour;}
-.plr-5{ padding-left: $sizeFive; padding-right: $sizeFive;}
+.plr-0 {
+  padding-left: $sizeZero;
+  padding-right: $sizeZero;
+}
+.plr-1 {
+  padding-left: $sizeOne;
+  padding-right: $sizeOne;
+}
+.plr-2 {
+  padding-left: $sizeTwo;
+  padding-right: $sizeTwo;
+}
+.plr-3 {
+  padding-left: $sizeThree;
+  padding-right: $sizeThree;
+}
+.plr-4 {
+  padding-left: $sizeFour;
+  padding-right: $sizeFour;
+}
+.plr-5 {
+  padding-left: $sizeFive;
+  padding-right: $sizeFive;
+}
 
 //padding-top&bottom
-.ptb-0{ padding-top: $sizeZero; padding-bottom: $sizeZero;}
-.ptb-1{ padding-top: $sizeOne; padding-bottom: $sizeOne;}
-.ptb-2{ padding-top: $sizeTwo; padding-bottom: $sizeTwo;}
-.ptb-3{ padding-top: $sizeThree; padding-bottom: $sizeThree;}
-.ptb-4{ padding-top: $sizeFour; padding-bottom: $sizeFour;}
-.ptb-5{ padding-top: $sizeFive; padding-bottom: $sizeFive;}
+.ptb-0 {
+  padding-top: $sizeZero;
+  padding-bottom: $sizeZero;
+}
+.ptb-1 {
+  padding-top: $sizeOne;
+  padding-bottom: $sizeOne;
+}
+.ptb-2 {
+  padding-top: $sizeTwo;
+  padding-bottom: $sizeTwo;
+}
+.ptb-3 {
+  padding-top: $sizeThree;
+  padding-bottom: $sizeThree;
+}
+.ptb-4 {
+  padding-top: $sizeFour;
+  padding-bottom: $sizeFour;
+}
+.ptb-5 {
+  padding-top: $sizeFive;
+  padding-bottom: $sizeFive;
+}
 
 //---------------------------
 
-*{
+* {
   margin: 0;
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+  transition-duration: 0.3s;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-body{
-  background-color : #f7f7f7;
+body {
+  background-color: #f7f7f7;
   transition: all;
 }
 
-ul{
+ul {
   display: inline-flex;
+}
+
+//default-class
+
+.section-title {
+  font-family: Cookie;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  color: $primaryPink;
+}
+
+.profile-card {
+  padding: 10px;
+  box-shadow: 0px 0px 10px #0002;
+  background-color: $primaryPink;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: Merienda;
+
+  &::after {
+    content: "";
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: rgba(255, 68, 126, 0.7);
+    width: 20%;
+    height: 47.9%;
+    z-index: -1;
+    margin: -10px 0 0 -10px;
+    transform: rotate(6deg);
+    transition-duration: 0.2s;
+  }
+
+  &:hover {
+    &::before {
+      transform: rotate(0deg);
+      outline: 1px solid #e10051;
+      outline-offset: 5px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+    background: #fff3;
+    margin: 0px -10px;
+    padding: 5px 0px;
+  }
+
+  &__body {
+    font-size: 17px;
+    text-align: center;
+    padding: 10px;
+  }
+}
+
+.ball {
+  position: absolute;
+  background: rgba(225, 0, 85, 0.1);
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  border-radius: 5em;
+  left: 28%;
+  margin-top: -1.2em;
 }
 
 //nav-bar
 
-.header{
+.header {
   font-family: Merienda;
   top: 0;
-  background-color:#ffe8ff;
+  background-color: #ffe8ff;
 
-  .header-nav{
+  .header-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-    .navLink{
+
+    .navLink {
       color: $primaryPink;
-      padding-top:2px;
+      padding-top: 2px;
       padding-bottom: 4px;
       cursor: pointer;
 
-      &:hover{
+      &:hover {
         background-color: $primaryPink;
         color: #fff;
-        outline: 1px solid rgba(225,0,81,0.5);
+        outline: 1px solid rgba(225, 0, 81, 0.5);
         outline-offset: 3px;
       }
     }
 
-    &__navItems > span{
-      background-color: rgba(225,0,81,0.5);
-      width: 30px;
-      height: 12px;
-      margin-top: 6px;
+    &__navItems > span {
+      background-color: rgb(225, 20, 100);
+      width: 18px;
+      height: 3px;
       visibility: hidden;
+      margin: 12px 3px;
+      transition-duration: 0s;
     }
 
-    .active{
+    .active {
       background-color: $primaryPink;
       color: #fff;
-      outline: 1px solid rgba(225,0,81,0.5);
+      outline: 1px solid rgba(124, 74, 92, 0.5);
       outline-offset: 3px;
     }
   }
 }
 
-.homeContent{
+.homeContent {
   text-align: center;
   color: $primaryPink;
 
-  h1{
+  h1 {
     margin-top: 1em;
     font-family: Cookie;
     font-size: 6em;
   }
 
-  p:nth-child(2){
+  p:nth-child(2) {
     font-family: Playball;
     font-size: 2em;
     margin-top: -20px;
   }
 
-  p:nth-child(3){
+  p:nth-child(3) {
     font-size: 2.7em;
     margin-top: 10px;
     font-family: Cookie;
     padding: 0px 7em;
   }
 
-  &-buttons{
-    margin-top:1.5em;
+  &-buttons {
+    margin-top: 1.5em;
 
-    button{
+    button {
       border: 0;
       padding: 5px 20px;
       font-size: 25px;
@@ -250,26 +615,23 @@ ul{
       color: #fff;
     }
 
-    &__btnWeb{
+    & .btnWeb {
       background-color: rgb(225, 0, 81);
     }
-
-    &__btnGraph{
-      background-color: rgba(225, 0, 81,0.5);
+    & .btnGraph {
+      background-color: rgba(225, 0, 81, 0.5);
     }
   }
 
-  &-bgImg{
+  &-bgImg {
     background-image: url("../img/grass-pink.png");
     height: 6em;
     background-repeat: repeat-x;
     margin-top: 8em;
   }
-
 }
 
-
-.intro-loader{
+.intro-loader {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -278,7 +640,7 @@ ul{
   background: #fff;
   z-index: 5;
 
-  svg text{ 
+  svg text {
     font-size: 150px;
     stroke: #0007;
     stroke-width: 3;
@@ -286,7 +648,7 @@ ul{
   }
 }
 
-.covid{
+.covid {
   position: absolute;
   z-index: 10;
   background-color: rgb(240, 240, 240) !important;
@@ -294,41 +656,41 @@ ul{
 
 /* Keyframes */
 
-@keyframes nameAnimate{
-  0%{
-      stroke-dasharray: 0 50%;
-      stroke-dashoffset: 20%;
-      fill: #fff;
+@keyframes nameAnimate {
+  0% {
+    stroke-dasharray: 0 50%;
+    stroke-dashoffset: 20%;
+    fill: #fff;
   }
-  50%{
-      stroke-dasharray: 50% 0;
-      stroke-dashoffset: 20%;
-      fill: #fff5;
+  50% {
+    stroke-dasharray: 50% 0;
+    stroke-dashoffset: 20%;
+    fill: #fff5;
   }
-  100%{
-      stroke-dasharray:  100% 100%;
-      stroke-dashoffset: 100%;
-      fill:#0007;
+  100% {
+    stroke-dasharray: 100% 100%;
+    stroke-dashoffset: 100%;
+    fill: #0007;
   }
 }
 
 /* Responsive */
 
 @media (max-width: 480px) {
-  .intro-loader svg text{
+  .intro-loader svg text {
     font-size: 70px;
     stroke-width: 2;
   }
 }
 
 @media (max-width: 768px) {
-  .intro-loader svg text{
+  .intro-loader svg text {
     font-size: 100px;
-    stroke-width:2;
+    stroke-width: 2;
   }
 }
 
-@media (max-width: 1024px) { 
+@media (max-width: 1024px) {
 }
 
 @media (max-width: 1200px) {

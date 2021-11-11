@@ -61,6 +61,22 @@
   color: #000;
 }
 
+.textCenter {
+  text-align: center;
+}
+
+.textRight {
+  text-align: right;
+}
+
+.textLeft {
+  text-align: left;
+}
+
+.textJustify {
+  text-align: justify;
+}
+
 .absolute {
   position: absolute;
 }
@@ -92,6 +108,44 @@
 
 .w-100 {
   width: 100%;
+}
+
+.container {
+  margin: 15px 10px;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px;
+}
+
+.column {
+  min-width: 8.333334%;
+  max-width: 100%;
+  width: auto;
+}
+
+.alignCenter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.justifyCenter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.radiusLess {
+  border-radius: 0;
+}
+
+.shadowLess {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .m-0 {
@@ -212,6 +266,66 @@
 
 .mt-5 {
   margin-top: 2.5em;
+}
+
+.mlr-0 {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.mlr-1 {
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+}
+
+.mlr-2 {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.mlr-3 {
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+.mlr-4 {
+  margin-left: 2em;
+  margin-right: 2em;
+}
+
+.mlr-5 {
+  margin-left: 2.5em;
+  margin-right: 2.5em;
+}
+
+.mtb-0 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.mtb-1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+.mtb-2 {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.mtb-3 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.mtb-4 {
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.mtb-5 {
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 .p-0 {
@@ -399,6 +513,11 @@
   padding: 0;
   list-style-type: none;
   text-decoration: none;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -411,6 +530,73 @@ ul {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
+}
+
+.section-title {
+  font-family: Cookie;
+  width: 100%;
+  text-align: center;
+  font-size: 2.5em;
+  color: #e10051;
+}
+
+.profile-card {
+  padding: 10px;
+  -webkit-box-shadow: 0px 0px 10px #0002;
+          box-shadow: 0px 0px 10px #0002;
+  background-color: #e10051;
+  font-size: 1.2em;
+  color: #fff;
+  font-family: Merienda;
+}
+
+.profile-card::after {
+  content: "";
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  background: rgba(255, 68, 126, 0.7);
+  width: 20%;
+  height: 47.9%;
+  z-index: -1;
+  margin: -10px 0 0 -10px;
+  -webkit-transform: rotate(6deg);
+          transform: rotate(6deg);
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.profile-card:hover::before {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+  outline: 1px solid #e10051;
+  outline-offset: 5px;
+}
+
+.profile-card__title {
+  text-align: center;
+  background: #fff3;
+  margin: 0px -10px;
+  padding: 5px 0px;
+}
+
+.profile-card__body {
+  font-size: 17px;
+  text-align: center;
+  padding: 10px;
+}
+
+.ball {
+  position: absolute;
+  background: rgba(225, 0, 85, 0.1);
+  z-index: -1;
+  width: 100px;
+  height: 100px;
+  border-radius: 5em;
+  left: 28%;
+  margin-top: -1.2em;
 }
 
 .header {
@@ -446,17 +632,19 @@ ul {
 }
 
 .header .header-nav__navItems > span {
-  background-color: rgba(225, 0, 81, 0.5);
-  width: 30px;
-  height: 12px;
-  margin-top: 6px;
+  background-color: #e11464;
+  width: 18px;
+  height: 3px;
   visibility: hidden;
+  margin: 12px 3px;
+  -webkit-transition-duration: 0s;
+          transition-duration: 0s;
 }
 
 .header .header-nav .active {
   background-color: #e10051;
   color: #fff;
-  outline: 1px solid rgba(225, 0, 81, 0.5);
+  outline: 1px solid rgba(124, 74, 92, 0.5);
   outline-offset: 3px;
 }
 
@@ -497,11 +685,11 @@ ul {
   color: #fff;
 }
 
-.homeContent-buttons__btnWeb {
+.homeContent-buttons .btnWeb {
   background-color: #e10051;
 }
 
-.homeContent-buttons__btnGraph {
+.homeContent-buttons .btnGraph {
   background-color: rgba(225, 0, 81, 0.5);
 }
 
