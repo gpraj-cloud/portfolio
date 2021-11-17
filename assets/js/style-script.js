@@ -1,3 +1,17 @@
+
+let screenWidth = screen.width;
+let screenHeight = screen.height;
+let availableWidth = screen.availWidth;
+let availableHeight = screen.availHeight;
+
+let section = document.querySelectorAll(".section");
+let height = availableHeight - 100;
+
+for(let key = 0; key < section.length; key++){
+  section[key].setAttribute('style',"height :"+height+"px");
+}
+
+
 //homeContent-buttons
  
 let btnWeb = document.querySelector(".btnWeb");
